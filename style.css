@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primary */
+  --softOrange: hsl(35, 77%, 62%);
+  --softRed: hsl(5, 85%, 63%);
+  /* Secondary */
+  --offWhite: hsl(36, 100%, 99%);
+  --grayishBlue: hsl(233, 8%, 79%);
+  --darkGrayishBlue: hsl(236, 13%, 42%);
+  --veryDarkBlue: hsl(240, 100%, 5%);
+  --bgWhite: rgb(247, 245, 235);
+}
+
+
+body {
+  width: 100vw;
+  height: auto;
+  background-color: var(--bgWhite);
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  font-family: 'Inter', sans-serif;
+  transition: 0.7s;
+  overflow-x: hidden;
+}
+
+.containerMain {
+  margin: 0 180px;
+}
+
+@media all and (max-width: 550px) {
+  .containerMain {
+    margin: 0 20px;
+  }
+}
+
+/* Navigation bar */
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 0;
+  color: var(--darkGrayishBlue);
+}
+
+.navR {
+  display: flex;
+}
+
+.navR div {
+  margin-left: 30px;
+}
+
+.navButton {
+  cursor: pointer;
+}
+
+.navButton:hover {
+  cursor: pointer;
+  color: var(--softRed);
+}
+
+/* Section 1 */
+.sec1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sec1L {
+  height: auto;
+  max-width: 64%;
+}
+
+.sec1img {
+  object-fit: contain;
+  max-width: 100%;
+}
+
+
+.sec1LB {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0 0 0;
+}
+
+.sec1LB1 {
+  width: 45%;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 60px;
+  padding: 0 30px 0 0;
+}
+
+.sec1LB2 {
+  width: 50%;
+  color: var(--darkGrayishBlue);
+  font-size: 15px;
+  line-height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sec1LB2B {
+  width: 50%;
+  background-color: var(--softRed);
+  color: var(--offWhite);
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 2px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.sec1LB2B:hover {
+  background-color: var(--veryDarkBlue);
+}
+
+
+
+
+.sec1R {
+  width: 33%;
+  background-color: var(--veryDarkBlue);
+  color: var(--offWhite);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px 25px;
+}
+
+.sec1RTitleMain {
+  font-size: 35px;
+  font-weight: 700;
+  color: var(--softOrange);
+}
+
+.sec1RTitle {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--offWhite);
+  padding: 0 0 10px 0;
+}
+
+.sec1RTitle:hover {
+  color: var(--softOrange);
+}
+
+.sec1RPara {
+  color: var(--grayishBlue);
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.sec1R2,
+.sec1R3 {
+  border-bottom: solid 2px var(--darkGrayishBlue);
+  padding-bottom: 20px;
+}
+
+@media all and (max-width: 550px) {
+  .sec1 {
+    flex-direction: column;
+  }
+
+  .sec1L {
+    max-width: 100%;
+  }
+
+  .sec1LB {
+    flex-direction: column;
+  }
+
+  .sec1LB1 {
+    width: 100%;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 60px;
+    padding: 0 30px 0 0;
+  }
+
+  .sec1img {
+    max-width: none;
+    max-height: 400px;
+  }
+
+  .sec1LB2 {
+    width: 100%;
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 40px;
+  }
+
+  .sec1LB2 div {
+    padding-bottom: 20px;
+  }
+
+  .sec1R {
+    width: 100%;
+    background-color: var(--veryDarkBlue);
+    color: var(--offWhite);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px 25px;
+  }
+
+  .sec1R1,
+  .sec1R2,
+  .sec1R3,
+  .sec1R4 {
+    margin-top: 20px;
+  }
+}
+
+/* Section 2  */
+.sec2 {
+  margin: 60px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.sec2c {
+  display: flex;
+}
+
+.sec21L {
+  width: 90px;
+
+  object-fit: contain;
+}
+
+.sec21R {
+  width: 60%;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.sec2img {
+  object-fit: contain;
+  max-width: 90px;
+  /* height: 120px; */
+
+}
+
+.sec21R1 {
+  font-size: 25px;
+  font-weight: 800;
+  color: var(--grayishBlue);
+}
+
+.sec21R2 {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.sec21R2:hover {
+  color: var(--softRed);
+  cursor: pointer;
+}
+
+.sec21R3 {
+  font-size: 15px;
+  color: var(--darkGrayishBlue);
+}
+
+
+@media all and (max-width: 550px) {
+  .sec2 {
+    flex-direction: column;
+  }
+
+  .sec2c {
+    margin-bottom: 20px;
+  }
+}
